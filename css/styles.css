@@ -39,6 +39,7 @@ img {
     --flower: #F4F4FD;
     --ocean: #404BBF;
     --corn: #E7E9FC;
+    --lightslate: #8E8F99;
   }
 
 .link { text-decoration: none; }
@@ -288,6 +289,8 @@ letter-spacing: 0.02em;
 .team {
     background-color: var(--flower, #F4F4FD);
     padding: 120px 0;
+    
+
 }
 .team-contaiter{
     
@@ -314,7 +317,7 @@ letter-spacing: 0.02em;
 }
 .team-item {
     background-color: var(--white);
-    width: calc((100% - 24px * 3)/4)
+    width: calc((100% - 24px * 3)/4);
     display: flex;
 
 flex-direction: column;
@@ -324,7 +327,7 @@ border-radius: 0px 0px 4px 4px;
 
 .team-content{
     padding: 32px 16px;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
 }
 
 .team-subtitle {
@@ -344,12 +347,74 @@ border-radius: 0px 0px 4px 4px;
     font-size: 16px;
     line-height: 1.50;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
     
 }
 
-.team-social-item {
+.team-social-list {
+    display: flex;
+    gap: 24px;
+    
+    /* width: calc((100% - 24px * 3)/4); */
+}
 
-    height: 16px;
+
+
+.team-social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--iris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-social-content {
+    fill: var(--cloud);
+}
+
+/* Customers */
+
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+.customers-title {
+    color: var(--navyblue, #2E2F42);
+    font-family: inherit;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+.customers-list {
+    display: flex;
+    margin: 0 auto;
+    gap: 24px;
+
+}
+.customers-icon {
+    width: calc((100% - 24px * 5)/6);
+}
+.customers-card {
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid var(--lightslate);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customers-card-icon {
+    fill: var(--lightslate);
 }
 
 /* Footer */
@@ -360,7 +425,7 @@ border-radius: 0px 0px 4px 4px;
 padding-bottom: 100px;
 }
 .footer-container {
-
+display: flex;
 
 }
 .footer-logo {
@@ -388,6 +453,20 @@ line-height: 1.50;
 letter-spacing: 0.02em;
 width: 264px;
 }
+
+.footer-title {
+    font-size: 16px;
+color: var(--white);
+font-weight: 500;
+line-height: 1.50;
+letter-spacing: 0.02em;
+margin-bottom: 16px;
+}
+.footer-content{
+    margin-right: 120px;
+
+}
+
 
 /* Cases */
 .cases {
