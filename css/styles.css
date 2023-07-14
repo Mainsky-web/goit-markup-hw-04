@@ -102,8 +102,22 @@ margin-right: 76px
  align-items: center;
  gap: 40px;
 }
-.header-list-item {
+.current {
+    position: relative;
 }
+
+.current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--ocean);
+}
+
+
 .header-list-link{
     color: var(--navyblue, #2E2F42);
     font-size: 16px;
@@ -220,8 +234,11 @@ display: flex;
 .strategy-list-item {
     width: calc((100% - 24px * 2)/3);
     flex-direction: column;
+    
    
 }
+
+
 
 .strategy-card {
     width: 264px;
@@ -539,6 +556,34 @@ border: 1px solid var(--corn);
     
 }
 
+
+
+.cases-overlay {
+ 
+    position: relative;
+    overflow: hidden;
+}
+
+.cases-text-overlay{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    background-color: var(--iris);
+    height: 100%;
+    padding: 40px 32px 164px 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(100%);
+    transition: transform 300ms ease-in-out;
+}
+
+.cases-overlay:hover .cases-text-overlay {
+    transform: translateY(0)
+
+}
 .cases-content {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
