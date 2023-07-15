@@ -41,6 +41,7 @@ img {
     --corn: #E7E9FC;
     --lightslate: #8E8F99;
     --green: #31D0AA;
+    --dairy: #FCFCFC;
   }
 
 .link { text-decoration: none; }
@@ -127,6 +128,7 @@ margin-right: 76px
     letter-spacing: 0.02em; 
     padding: 24px 0;
     display: inline-block;
+    transition: color 300ms ease;
     
     
 }
@@ -380,6 +382,10 @@ border-radius: 0px 0px 4px 4px;
   
 }
 
+.team-social-link {
+    transition: color 300ms ease;
+}
+
 .team-social-icon {
     background-color: var(--iris);
     width: 40px;
@@ -389,16 +395,17 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 300ms ease;
 }
 
-.team-social-link:is(:hover :focus) .team-social-icon{ 
-    background-color: var(--ocean);
+.team-social-link:is(:hover, :focus) .team-social-icon { 
+    
+   background-color: var(--ocean);
 }
-
-
 
 
 .team-social-content {
+
     fill: var(--cloud);
 }
 
@@ -504,9 +511,10 @@ margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition:  background-color 300ms ease;
 }
 
-.footer-social-link:is(:hover :focus) .footer-social-icon{ 
+.footer-social-link:is(:hover, :focus) .footer-social-icon{ 
     background-color: var(--green);
 }
 
@@ -624,4 +632,58 @@ border: 1px solid var(--corn);
     color: var(--white);
 background-color: var(--ocean, #404BBF);
 border: 1px solid transparent;
+}
+
+
+/* Modal */
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop {
+    background-color: rgba(46, 47, 66, 0.40);
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.modal {
+    width: 408px;
+    min-height: 584px;
+    background-color: var(--dairy);
+    border-radius: 4px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* position: relative; */
+}
+
+.modal-btn{
+    border: none;
+    
+
+    background-color: var(--corn);
+   
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.10); ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 300ms ease;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+
+.modal-content {
+    fill: var(--navyblue); 
+
 }
