@@ -401,9 +401,11 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 }
 
 
+.team-social-link:hover {
+    background-color: var(--ocean);
+}
 
 
-.team-social-link:hover,
 .team-social-link:focus {
     
    background-color: var(--ocean);
@@ -457,6 +459,12 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.customers-card-icon:hover,
+.customers-link:focus {
+
+    color: var(--ocean);
+    border-color: var(--ocean);
+}
 .customers-link:hover,
 .customers-link:focus {
 
@@ -542,6 +550,11 @@ margin-bottom: 16px;
 .footer-social-icon {
    fill: var(--cloud);
 }
+
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+    background-color: #31d0aa;
+  }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -684,9 +697,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 
 /* Modal */
 .is-hidden {
-    /* visibility: hidden; */
-    /* opacity: 0; */
-    /* pointer-events: none; */
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .backdrop {
