@@ -762,19 +762,20 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 }
 
 
-
-.modal-btn:hover .modal-content,
-.modal-btn:focus .modal-content {
-  background-color: var(--ocean);
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--ocean);
   border: none;
   fill: var(--white);
   
 }
 
-/* .modal-content:hover,
-.modal-content:focus {
-  fill: var(--white);
-} */
+
+.modal-btn:hover .modal-content,
+.modal-btn:focus .modal-content {
+    fill: var(--white);
+}
+
 
 
 
