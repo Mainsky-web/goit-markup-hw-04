@@ -757,28 +757,14 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
     top: 24px;
     cursor: pointer; 
 }
-.modal-content:hover {
 
-    fill: var(--white);
+
+
+.modal-btn:is(:focus :hover)  {
     background-color: var(--ocean);
     border: none;
-}
-
-.modal-content:focus{
+    fill: var(--white);
    
-    fill: var(--white);
-    background-color: var(--ocean);
-    border: none;
-}
-
-.modal-btn:hover {
-    background-color: var(--ocean);
-    border: none;
-}
-.modal-btn:focus {
-    background-color: var(--ocean);
-    border: none;
-   ;
 }
 
 
